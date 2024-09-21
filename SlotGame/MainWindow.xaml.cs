@@ -80,14 +80,14 @@ namespace SlotGame
 
             _symbolPayouts = new Dictionary<string, Dictionary<int, int>>
 {
-    { "cherries.png", new Dictionary<int, int> { {3, 4}, {4, 10}, {5, 40} } }, // Череши
-    { "lemon.png", new Dictionary<int, int> { {3, 4}, {4, 10}, {5, 40} } },   // Лимон
-    { "orange.png", new Dictionary<int, int> { {3, 4}, {4, 10}, {5, 40} } },  // Портокал
-    { "plum.png", new Dictionary<int, int> { {3, 4}, {4, 10}, {5, 40} } },    // Слива
-    { "grape.png", new Dictionary<int, int> { {3, 10}, {4, 40}, {5, 100} } }, // Грозде
-    { "watermelon.png", new Dictionary<int, int> { {3, 10}, {4, 40}, {5, 100} } }, // Диня
-    { "seven.png", new Dictionary<int, int> { {3, 20}, {4, 200}, {5, 1000} } },    // Червено 7
-    { "scatter.png", new Dictionary<int, int> { {3, 2}, {4, 10}, {5, 50} } }       // Scatter звезда
+    { "cherries.png", new Dictionary<int, int> { {3, 4}, {4, 10}, {5, 40} } }, 
+    { "lemon.png", new Dictionary<int, int> { {3, 4}, {4, 10}, {5, 40} } },  
+    { "orange.png", new Dictionary<int, int> { {3, 4}, {4, 10}, {5, 40} } },
+    { "plum.png", new Dictionary<int, int> { {3, 4}, {4, 10}, {5, 40} } }, 
+    { "grape.png", new Dictionary<int, int> { {3, 10}, {4, 40}, {5, 100} } }, 
+    { "watermelon.png", new Dictionary<int, int> { {3, 10}, {4, 40}, {5, 100} } }, 
+    { "seven.png", new Dictionary<int, int> { {3, 20}, {4, 200}, {5, 1000} } },  
+    { "scatter.png", new Dictionary<int, int> { {3, 2}, {4, 10}, {5, 50} } }  
 };
 
             winningLines = new List<int[]>
@@ -235,7 +235,7 @@ namespace SlotGame
                     }
                 }
 
-                return matchCount >= 3; // Връща true ако има поне 3 съвпадения
+                return matchCount >= 3; 
             }
 
             return false;
@@ -292,7 +292,7 @@ namespace SlotGame
 
         private void HighlightWinningLine(int[] line, int matchCount)
         {
-            // Ограничаваме подчертаването до броя на съвпаденията (напр. 3, 4 или 5)
+        
             for (int i = 0; i < matchCount; i++)
             {
                 if (ReelsGrid.Children[line[i]] is Image image)
@@ -317,7 +317,7 @@ namespace SlotGame
             {
                 if (element is Image image)
                 {
-                    // Спиране на всяка текуща анимация върху изображението
+                    
                     image.BeginAnimation(UIElement.OpacityProperty, null);
                 }
             }
@@ -379,7 +379,7 @@ namespace SlotGame
             int totalWin = CalculateTotalWin();
             LastWinBox.Text = $"Last Win : {totalWin} BGN";
 
-            // Пускане на звуците при печеливша линия
+           
             bool hasWinningLine = false;
             foreach (var line in winningLines)
             {
@@ -391,7 +391,7 @@ namespace SlotGame
                 }
             }
 
-            // Пускане на звуците само ако има печеливша линия
+           
             if (hasWinningLine)
             {
                 winSound1.Play();
