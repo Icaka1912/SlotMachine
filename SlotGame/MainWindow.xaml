@@ -1,0 +1,445 @@
+﻿<Window x:Class="SlotGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SlotGame"
+        mc:Ignorable="d"
+        Title="IcakaBet" Height="560" Width="785" WindowStartupLocation="CenterScreen" Icon="/casino.png" FontSize="20" FontFamily="Segoe UI Black" ResizeMode="CanMinimize">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#B26C0B0B"/>
+                <GradientStop Color="#FFFF0020" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBox x:Name="Headline" HorizontalAlignment="Center" Height="66" Margin="0,10,0,0" Text="5 DAZZLING HOT" VerticalAlignment="Top" Width="406" TextAlignment="Center" TextWrapping="Wrap" FontSize="40" Background="{x:Null}" BorderThickness="0,0,0,0" IsReadOnly="True" FontWeight="Bold" FontFamily="Comic Sans MS" Focusable="False" IsUndoEnabled="False" IsTabStop="False">
+            <TextBox.Effect>
+                <DropShadowEffect/>
+            </TextBox.Effect>
+            <TextBox.Foreground>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFF6C400" Offset="0.294"/>
+                    <GradientStop Color="#FFF6DF00" Offset="0.505"/>
+                    <GradientStop Color="#FFFFB900" Offset="0.678"/>
+                    <GradientStop Color="#FFF7FB00" Offset="0.803"/>
+                    <GradientStop Color="#FFFFDE00" Offset="0"/>
+                    <GradientStop Color="#FFFFE700" Offset="1"/>
+                    <GradientStop Color="#FFF6FA00" Offset="0.121"/>
+                </RadialGradientBrush>
+            </TextBox.Foreground>
+            <TextBox.SelectionTextBrush>
+                <RadialGradientBrush>
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FFFF8100"/>
+                </RadialGradientBrush>
+            </TextBox.SelectionTextBrush>
+        </TextBox>
+        <UniformGrid  Rows="3" Columns="5" HorizontalAlignment="Center" VerticalAlignment="Top" Name="ReelsGrid" Margin="0,105,0,0" Height="310" Width="506">
+            <Image Width="80" Height="80" Margin="5">
+                <Image.Effect>
+                    <DropShadowEffect/>
+                </Image.Effect>
+                <Image.RenderTransform>
+                    <TranslateTransform x:Name="Transform0" />
+                </Image.RenderTransform>
+            </Image>
+            <Image Width="80" Height="80" Margin="5">
+                <Image.Effect>
+                    <DropShadowEffect/>
+                </Image.Effect>
+                <Image.RenderTransform>
+                    <TranslateTransform x:Name="Transform1" />
+                </Image.RenderTransform>
+            </Image>
+            <Image Width="80" Height="80" Margin="5">
+                <Image.Effect>
+                    <DropShadowEffect/>
+                </Image.Effect>
+                <Image.RenderTransform>
+                    <TranslateTransform x:Name="Transform2" />
+                </Image.RenderTransform>
+            </Image>
+            <Image Width="80" Height="80" Margin="5">
+                <Image.Effect>
+                    <DropShadowEffect/>
+                </Image.Effect>
+                <Image.RenderTransform>
+                    <TranslateTransform x:Name="Transform3" />
+                </Image.RenderTransform>
+            </Image>
+            <Image Width="80" Height="80" Margin="5">
+                <Image.Effect>
+                    <DropShadowEffect/>
+                </Image.Effect>
+                <Image.RenderTransform>
+                    <TranslateTransform x:Name="Transform4" />
+                </Image.RenderTransform>
+            </Image>
+            <Image Width="80" Height="80" Margin="5">
+                <Image.Effect>
+                    <DropShadowEffect/>
+                </Image.Effect>
+                <Image.RenderTransform>
+                    <TranslateTransform x:Name="Transform5" />
+                </Image.RenderTransform>
+            </Image>
+            <Image Width="80" Height="80" Margin="5">
+                <Image.Effect>
+                    <DropShadowEffect/>
+                </Image.Effect>
+                <Image.RenderTransform>
+                    <TranslateTransform x:Name="Transform6" />
+                </Image.RenderTransform>
+            </Image>
+            <Image Width="80" Height="80" Margin="5">
+                <Image.Effect>
+                    <DropShadowEffect/>
+                </Image.Effect>
+                <Image.RenderTransform>
+                    <TranslateTransform x:Name="Transform7" />
+                </Image.RenderTransform>
+            </Image>
+            <Image Width="80" Height="80" Margin="5">
+                <Image.Effect>
+                    <DropShadowEffect/>
+                </Image.Effect>
+                <Image.RenderTransform>
+                    <TranslateTransform x:Name="Transform8" />
+                </Image.RenderTransform>
+            </Image>
+            <Image Width="80" Height="80" Margin="5">
+                <Image.Effect>
+                    <DropShadowEffect/>
+                </Image.Effect>
+                <Image.RenderTransform>
+                    <TranslateTransform x:Name="Transform9" />
+                </Image.RenderTransform>
+            </Image>
+            <Image Width="80" Height="80" Margin="5">
+                <Image.Effect>
+                    <DropShadowEffect/>
+                </Image.Effect>
+                <Image.RenderTransform>
+                    <TranslateTransform x:Name="Transform10" />
+                </Image.RenderTransform>
+            </Image>
+            <Image Width="80" Height="80" Margin="5">
+                <Image.Effect>
+                    <DropShadowEffect/>
+                </Image.Effect>
+                <Image.RenderTransform>
+                    <TranslateTransform x:Name="Transform11" />
+                </Image.RenderTransform>
+            </Image>
+            <Image Width="80" Height="80" Margin="5">
+                <Image.Effect>
+                    <DropShadowEffect/>
+                </Image.Effect>
+                <Image.RenderTransform>
+                    <TranslateTransform x:Name="Transform12" />
+                </Image.RenderTransform>
+            </Image>
+            <Image Width="80" Height="80" Margin="5">
+                <Image.Effect>
+                    <DropShadowEffect/>
+                </Image.Effect>
+                <Image.RenderTransform>
+                    <TranslateTransform x:Name="Transform13" />
+                </Image.RenderTransform>
+            </Image>
+            <Image Width="80" Height="80" Margin="5">
+                <Image.Effect>
+                    <DropShadowEffect/>
+                </Image.Effect>
+                <Image.RenderTransform>
+                    <TranslateTransform x:Name="Transform14" />
+                </Image.RenderTransform>
+            </Image>
+        </UniformGrid>
+
+
+        <Image x:Name="SpinButton" Source="/spin.png" Width="100" Height="100" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="5" MouseLeftButtonUp="SpinButton_Click" Cursor="Hand"/>
+
+        <TextBox x:Name="FixedLines1" HorizontalAlignment="Left" Height="89" Margin="10,209,0,0" Text="5&#xA;Lines&#xA;Fixed" Width="104" TextAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap" IsReadOnly="True" BorderThickness="3,3,3,3" FontWeight="Bold" IsHitTestVisible="False" Background="{x:Null}">
+            <TextBox.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0.987"/>
+                    <GradientStop Color="Black" Offset="0.009"/>
+                </LinearGradientBrush>
+            </TextBox.BorderBrush>
+            <TextBox.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFE3FF00" Offset="0.763"/>
+                    <GradientStop Color="#FFC34D00" Offset="0.961"/>
+                </LinearGradientBrush>
+            </TextBox.Foreground>
+            <TextBox.Effect>
+                <DropShadowEffect/>
+            </TextBox.Effect>
+        </TextBox>
+        <TextBox x:Name="BalanceBox" Height="74" Margin="140,450,0,0" TextWrapping="Wrap" Text="Balance :" Width="127" VerticalAlignment="Top" HorizontalAlignment="Left" BorderThickness="0,0,0,0" FontSize="24" FontFamily="Arial" IsHitTestVisible="False" IsReadOnly="True" FontWeight="Bold" Background="{x:Null}" TextAlignment="Center">
+            <TextBox.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFF6FF00"/>
+                    <GradientStop Color="#FFFF9700" Offset="0.497"/>
+                    <GradientStop Color="#FFEDFF00" Offset="0.993"/>
+                </LinearGradientBrush>
+            </TextBox.Foreground>
+            <TextBox.Effect>
+                <DropShadowEffect/>
+            </TextBox.Effect>
+        </TextBox>
+        <TextBox x:Name="LastWinBox" Height="84" Margin="525,450,0,0" TextWrapping="Wrap" Text="Last Win : 0 BGN" Width="121" VerticalAlignment="Top" HorizontalAlignment="Left" BorderThickness="0,0,0,0" FontSize="24" FontFamily="Arial" IsHitTestVisible="False" IsReadOnly="True" FontWeight="Bold" Background="{x:Null}" TextAlignment="Center">
+            <TextBox.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFF6FF00"/>
+                    <GradientStop Color="#FFFF9700" Offset="0.497"/>
+                    <GradientStop Color="#FFEDFF00" Offset="0.993"/>
+                </LinearGradientBrush>
+            </TextBox.Foreground>
+            <TextBox.Effect>
+                <DropShadowEffect/>
+            </TextBox.Effect>
+        </TextBox>
+        <GridSplitter HorizontalAlignment="Left" Height="310" Margin="227,105,0,0" Width="2" UseLayoutRounding="False" VerticalAlignment="Top" Focusable="False" IsHitTestVisible="False" IsTabStop="False">
+            <GridSplitter.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFFF2000"/>
+                    <GradientStop Color="#FFE5FF00" Offset="0.355"/>
+                    <GradientStop Color="#FFE4F903" Offset="0.971"/>
+                    <GradientStop Color="#FFFF1700" Offset="0.709"/>
+                </LinearGradientBrush>
+            </GridSplitter.Background>
+        </GridSplitter>
+        <GridSplitter HorizontalAlignment="Left" Height="310" Margin="136,105,0,0" Width="2" UseLayoutRounding="False" VerticalAlignment="Top" Focusable="False" IsHitTestVisible="False" IsTabStop="False">
+            <GridSplitter.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFFF2000"/>
+                    <GradientStop Color="#FFE5FF00" Offset="0.355"/>
+                    <GradientStop Color="#FFE4F903" Offset="0.971"/>
+                    <GradientStop Color="#FFFF1700" Offset="0.709"/>
+                </LinearGradientBrush>
+            </GridSplitter.Background>
+        </GridSplitter>
+        <GridSplitter HorizontalAlignment="Left" Height="310" Margin="238,105,0,0" Width="2" UseLayoutRounding="False" VerticalAlignment="Top" Focusable="False" IsHitTestVisible="False" IsTabStop="False">
+            <GridSplitter.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFFF2000"/>
+                    <GradientStop Color="#FFE5FF00" Offset="0.355"/>
+                    <GradientStop Color="#FFE4F903" Offset="0.971"/>
+                    <GradientStop Color="#FFFF1700" Offset="0.709"/>
+                </LinearGradientBrush>
+            </GridSplitter.Background>
+        </GridSplitter>
+        <GridSplitter HorizontalAlignment="Left" Height="310" Margin="327,105,0,0" Width="2" UseLayoutRounding="False" VerticalAlignment="Top" Focusable="False" IsHitTestVisible="False" IsTabStop="False">
+            <GridSplitter.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFFF2000"/>
+                    <GradientStop Color="#FFE5FF00" Offset="0.355"/>
+                    <GradientStop Color="#FFE4F903" Offset="0.971"/>
+                    <GradientStop Color="#FFFF1700" Offset="0.709"/>
+                </LinearGradientBrush>
+            </GridSplitter.Background>
+        </GridSplitter>
+        <GridSplitter HorizontalAlignment="Left" Height="310" Margin="338,105,0,0" Width="2" UseLayoutRounding="False" VerticalAlignment="Top" Focusable="False" IsHitTestVisible="False" IsTabStop="False">
+            <GridSplitter.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFFF2000"/>
+                    <GradientStop Color="#FFE5FF00" Offset="0.355"/>
+                    <GradientStop Color="#FFE4F903" Offset="0.971"/>
+                    <GradientStop Color="#FFFF1700" Offset="0.709"/>
+                </LinearGradientBrush>
+            </GridSplitter.Background>
+        </GridSplitter>
+        <GridSplitter HorizontalAlignment="Left" Height="310" Margin="428,105,0,0" Width="2" UseLayoutRounding="False" VerticalAlignment="Top" Focusable="False" IsHitTestVisible="False" IsTabStop="False">
+            <GridSplitter.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFFF2000"/>
+                    <GradientStop Color="#FFE5FF00" Offset="0.355"/>
+                    <GradientStop Color="#FFE4F903" Offset="0.971"/>
+                    <GradientStop Color="#FFFF1700" Offset="0.709"/>
+                </LinearGradientBrush>
+            </GridSplitter.Background>
+        </GridSplitter>
+        <GridSplitter HorizontalAlignment="Left" Height="310" Margin="440,105,0,0" Width="2" UseLayoutRounding="False" VerticalAlignment="Top" Focusable="False" IsHitTestVisible="False" IsTabStop="False">
+            <GridSplitter.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFFF2000"/>
+                    <GradientStop Color="#FFE5FF00" Offset="0.355"/>
+                    <GradientStop Color="#FFE4F903" Offset="0.971"/>
+                    <GradientStop Color="#FFFF1700" Offset="0.709"/>
+                </LinearGradientBrush>
+            </GridSplitter.Background>
+        </GridSplitter>
+        <GridSplitter HorizontalAlignment="Left" Height="310" Margin="530,105,0,0" Width="2" UseLayoutRounding="False" VerticalAlignment="Top" Focusable="False" IsHitTestVisible="False" IsTabStop="False">
+            <GridSplitter.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFFF2000"/>
+                    <GradientStop Color="#FFE5FF00" Offset="0.355"/>
+                    <GradientStop Color="#FFE4F903" Offset="0.971"/>
+                    <GradientStop Color="#FFFF1700" Offset="0.709"/>
+                </LinearGradientBrush>
+            </GridSplitter.Background>
+        </GridSplitter>
+        <GridSplitter HorizontalAlignment="Left" Height="310" Margin="542,105,0,0" Width="2" UseLayoutRounding="False" VerticalAlignment="Top" Focusable="False" IsHitTestVisible="False" IsTabStop="False">
+            <GridSplitter.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFFF2000"/>
+                    <GradientStop Color="#FFE5FF00" Offset="0.355"/>
+                    <GradientStop Color="#FFE4F903" Offset="0.971"/>
+                    <GradientStop Color="#FFFF1700" Offset="0.709"/>
+                </LinearGradientBrush>
+            </GridSplitter.Background>
+        </GridSplitter>
+        <GridSplitter HorizontalAlignment="Left" Height="310" Margin="632,105,0,0" Width="2" UseLayoutRounding="False" VerticalAlignment="Top" Focusable="False" IsHitTestVisible="False" IsTabStop="False">
+            <GridSplitter.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFFF2000"/>
+                    <GradientStop Color="#FFE5FF00" Offset="0.355"/>
+                    <GradientStop Color="#FFE4F903" Offset="0.971"/>
+                    <GradientStop Color="#FFFF1700" Offset="0.709"/>
+                </LinearGradientBrush>
+            </GridSplitter.Background>
+        </GridSplitter>
+        <GridSplitter HorizontalAlignment="Left" Height="2" Margin="138,105,0,0" VerticalAlignment="Top" Width="89" IsHitTestVisible="False" IsTabStop="False">
+            <GridSplitter.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFFF2000"/>
+                    <GradientStop Color="#FFE5FF00" Offset="0.355"/>
+                    <GradientStop Color="#FFE4F903" Offset="0.971"/>
+                    <GradientStop Color="#FFFF1700" Offset="0.709"/>
+                </LinearGradientBrush>
+            </GridSplitter.Background>
+        </GridSplitter>
+        <GridSplitter HorizontalAlignment="Left" Height="2" Margin="239,105,0,0" VerticalAlignment="Top" Width="89" IsHitTestVisible="False" IsTabStop="False">
+            <GridSplitter.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFFF2000"/>
+                    <GradientStop Color="#FFE5FF00" Offset="0.355"/>
+                    <GradientStop Color="#FFE4F903" Offset="0.971"/>
+                    <GradientStop Color="#FFFF1700" Offset="0.709"/>
+                </LinearGradientBrush>
+            </GridSplitter.Background>
+        </GridSplitter>
+        <GridSplitter HorizontalAlignment="Left" Height="2" Margin="339,105,0,0" VerticalAlignment="Top" Width="89" IsHitTestVisible="False" IsTabStop="False">
+            <GridSplitter.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFFF2000"/>
+                    <GradientStop Color="#FFE5FF00" Offset="0.355"/>
+                    <GradientStop Color="#FFE4F903" Offset="0.971"/>
+                    <GradientStop Color="#FFFF1700" Offset="0.709"/>
+                </LinearGradientBrush>
+            </GridSplitter.Background>
+        </GridSplitter>
+        <GridSplitter HorizontalAlignment="Left" Height="2" Margin="442,105,0,0" VerticalAlignment="Top" Width="89" IsHitTestVisible="False" IsTabStop="False">
+            <GridSplitter.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFFF2000"/>
+                    <GradientStop Color="#FFE5FF00" Offset="0.355"/>
+                    <GradientStop Color="#FFE4F903" Offset="0.971"/>
+                    <GradientStop Color="#FFFF1700" Offset="0.709"/>
+                </LinearGradientBrush>
+            </GridSplitter.Background>
+        </GridSplitter>
+        <GridSplitter HorizontalAlignment="Left" Height="2" Margin="544,105,0,0" VerticalAlignment="Top" Width="89" IsHitTestVisible="False" IsTabStop="False">
+            <GridSplitter.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFFF2000"/>
+                    <GradientStop Color="#FFE5FF00" Offset="0.355"/>
+                    <GradientStop Color="#FFE4F903" Offset="0.971"/>
+                    <GradientStop Color="#FFFF1700" Offset="0.709"/>
+                </LinearGradientBrush>
+            </GridSplitter.Background>
+        </GridSplitter>
+        <GridSplitter HorizontalAlignment="Left" Height="2" Margin="442,413,0,0" VerticalAlignment="Top" Width="89" IsHitTestVisible="False" IsTabStop="False">
+            <GridSplitter.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFFF2000"/>
+                    <GradientStop Color="#FFE5FF00" Offset="0.355"/>
+                    <GradientStop Color="#FFE4F903" Offset="0.971"/>
+                    <GradientStop Color="#FFFF1700" Offset="0.709"/>
+                </LinearGradientBrush>
+            </GridSplitter.Background>
+        </GridSplitter>
+        <GridSplitter HorizontalAlignment="Left" Height="2" Margin="544,413,0,0" VerticalAlignment="Top" Width="89" IsHitTestVisible="False" IsTabStop="False">
+            <GridSplitter.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFFF2000"/>
+                    <GradientStop Color="#FFE5FF00" Offset="0.355"/>
+                    <GradientStop Color="#FFE4F903" Offset="0.971"/>
+                    <GradientStop Color="#FFFF1700" Offset="0.709"/>
+                </LinearGradientBrush>
+            </GridSplitter.Background>
+        </GridSplitter>
+        <GridSplitter HorizontalAlignment="Left" Height="2" Margin="340,413,0,0" VerticalAlignment="Top" Width="89" IsHitTestVisible="False" IsTabStop="False">
+            <GridSplitter.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFFF2000"/>
+                    <GradientStop Color="#FFE5FF00" Offset="0.355"/>
+                    <GradientStop Color="#FFE4F903" Offset="0.971"/>
+                    <GradientStop Color="#FFFF1700" Offset="0.709"/>
+                </LinearGradientBrush>
+            </GridSplitter.Background>
+        </GridSplitter>
+        <GridSplitter HorizontalAlignment="Left" Height="2" Margin="239,413,0,0" VerticalAlignment="Top" Width="89" IsHitTestVisible="False" IsTabStop="False">
+            <GridSplitter.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFFF2000"/>
+                    <GradientStop Color="#FFE5FF00" Offset="0.355"/>
+                    <GradientStop Color="#FFE4F903" Offset="0.971"/>
+                    <GradientStop Color="#FFFF1700" Offset="0.709"/>
+                </LinearGradientBrush>
+            </GridSplitter.Background>
+        </GridSplitter>
+        <GridSplitter HorizontalAlignment="Left" Height="2" Margin="138,413,0,0" VerticalAlignment="Top" Width="89" IsHitTestVisible="False" IsTabStop="False">
+            <GridSplitter.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFFF2000"/>
+                    <GradientStop Color="#FFE5FF00" Offset="0.355"/>
+                    <GradientStop Color="#FFE4F903" Offset="0.971"/>
+                    <GradientStop Color="#FFFF1700" Offset="0.709"/>
+                </LinearGradientBrush>
+            </GridSplitter.Background>
+        </GridSplitter>
+        <TextBox x:Name="FixedLines1_Copy" HorizontalAlignment="Left" Height="89" Margin="655,209,0,0" Text="5&#xA;Lines&#xA;Fixed" Width="104" TextAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap" IsReadOnly="True" BorderThickness="3,3,3,3" FontWeight="Bold" IsHitTestVisible="False" Background="{x:Null}">
+            <TextBox.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0.987"/>
+                    <GradientStop Color="Black" Offset="0.009"/>
+                </LinearGradientBrush>
+            </TextBox.BorderBrush>
+            <TextBox.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFE3FF00" Offset="0.763"/>
+                    <GradientStop Color="#FFC34D00" Offset="0.961"/>
+                </LinearGradientBrush>
+            </TextBox.Foreground>
+            <TextBox.Effect>
+                <DropShadowEffect/>
+            </TextBox.Effect>
+        </TextBox>
+    </Grid>
+</Window>

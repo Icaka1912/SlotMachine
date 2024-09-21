@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="casino.png" />
+    <None Remove="images\banana.png" />
+    <None Remove="images\cherries.png" />
+    <None Remove="Images\cherry.png" />
+    <None Remove="Images\grape.png" />
+    <None Remove="Images\lemon.png" />
+    <None Remove="Images\orange.png" />
+    <None Remove="Images\plum.png" />
+    <None Remove="Images\scatter.png" />
+    <None Remove="Images\seven.png" />
+    <None Remove="Images\watermelon.png" />
+    <None Remove="reelstopsound.wav" />
+    <None Remove="spin.png" />
+    <None Remove="spinaudio.wav" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="casino.png" />
+    <Resource Include="images\cherries.png" />
+    <Resource Include="Images\grape.png" />
+    <Resource Include="Images\lemon.png" />
+    <Resource Include="Images\orange.png" />
+    <Resource Include="Images\plum.png" />
+    <Resource Include="Images\scatter.png" />
+    <Resource Include="Images\seven.png" />
+    <Resource Include="Images\watermelon.png" />
+    <Resource Include="reelstopsound.wav" />
+    <Resource Include="spin.png" />
+    <Resource Include="spinaudio.wav" />
+  </ItemGroup>
+
+</Project>
