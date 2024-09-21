@@ -12,6 +12,7 @@ This is at zero balance and if the player wants to play more, a window appears w
 ![Screenshot 2024-09-21 134356](https://github.com/user-attachments/assets/43b32a6b-dc0a-4f98-9161-7c0eccccb3a3)
 ![Screenshot 2024-09-21 134405](https://github.com/user-attachments/assets/fbd01b54-af81-4144-b2ce-5eff02188b7c)
 ![Screenshot 2024-09-21 134415](https://github.com/user-attachments/assets/2bb4644f-3550-48bd-bc94-ba18fbe52bcc)
+![Screenshot 2024-09-21 134211](https://github.com/user-attachments/assets/ec15e361-edd9-407d-b87e-c2a6c80b5d8b)
 
 
 https://github.com/user-attachments/assets/85408db1-932d-47fa-9fef-0a78805d7e48
